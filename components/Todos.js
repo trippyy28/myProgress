@@ -29,6 +29,7 @@ const Todos = () => {
       {todos.map((todo) => (
         <Todo
           key={todo.id}
+          id={todo.id}
           title={todo.title}
           detail={todo.detail}
           timpestamp={todo.timestamp}

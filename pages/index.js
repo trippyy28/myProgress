@@ -25,7 +25,12 @@ export default function Home() {
     <TodoContext.Provider value={{ showAlert }}>
       <Container>
         <TodoForm />
-        <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
+        <Snackbar
+          anchorOrigin={{ vertical: "bottom", horizontal: "center" }}
+          open={open}
+          autoHideDuration={6000}
+          onClose={handleClose}
+        >
           <Alert
             onClose={handleClose}
             severity={alertType}
